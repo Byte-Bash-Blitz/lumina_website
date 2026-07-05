@@ -1,0 +1,243 @@
+Timestamp
+
+Full name?
+
+Which domain have you chosen?
+
+Please provide your GitHub profile link.
+
+If you have a portfolio, please provide the hosted link.Please provide your LinkedIn profile link.
+
+Project 1: Title
+
+Project 1: Link (if available)
+
+10/24/2025 12:27:26
+
+Infance Tony
+
+Web Development, Cloud Computing
+
+github.com/infance-tony
+
+github.com/infance-tony.github.io
+
+smce-e-book
+
+infance-tony.github.io/smce-e-bookhttps://drive.google.com/open?id=1JAG20VlXWHstIl8tOObznSNl8gm04ke8
+SMCE E-Book is a full-stack web application built
+LuminaFit
+with React and Supabase
+infance-tony.github.com/LuminaFit
+that serves as a digital learninghttps://drive.google.com/open?id=1ygVPCWm0g3sbJEqWo-Hkfl7-jNqCZZqU
+platform for Stella Mary’s College of Engineering
+LuminaFit is
+students.
+a gym tracker
+It allows
+Android
+users app
+to view
+builtand
+with
+download
+Java, designed
+departmentto helpand
+users
+semester-wise
+track their workouts,
+e-books, with
+dailysecure
+diet, and
+Google
+waterOAuth
+intake.authentication.
+It features reminder
+The app
+notifications,
+also includes
+a stopwatch,
+an admin dashboard
+and a dailyfor
+progress
+managing
+dashboard,
+books and
+offering
+users,a providing
+completean
+fitness
+efficient
+companion
+and accessible
+for a healthy
+onlinelifestyle.
+library experience.
+
+10/24/2025 17:29:38
+
+Hamdhan hussain
+
+Data Science
+
+https://github.com/Hamdhusam
+
+https://lovable.dev/projects/15278cb1-8afc-4b75-80b0-6271ef8114d2
+http://linkedin.com/in/hamdhan-hussain
+
+10/24/2025 19:33:10
+
+SV Aparna Suresh
+
+Web Development, UI/UX Design
+
+https://github.com/Aparna-stack-ux782
+
+https://aparna-mindscape.lovable.app/
+
+10/24/2025 21:22:12
+
+Nithisha P. N
+
+Data Science
+
+https://github.com/nithishanagarani
+
+It helps students improve their skills, track their progress, and access learning resources easily.
+https://lovable.dev/projects/b892721e-ffec-4195-85d4-3878067cd541
+https://www.linkedin.com/in/nithisha-p-n-362067332?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app
+Student development webhttps://github.com/nithishanagarani/student-development-web
+https://drive.google.com/open?id=16P23NnwlY4zdHXVrMdaNNCxErVd8adky
+Development of a mobile application for secure water level data
+https://drive.google.com/open?id=1WrLSOlnkSkCLJiIy-3yYaIm0U21NKIG_
+collection from rivers using image processing.
+This project is a mobile application that collects water-level data from rivers using image processing techniques. The app takes pictures of rivers, detects the water level, and records it securely. Makes data collection easier, faster, and secure
+
+10/26/2025 19:26:25
+
+Moun Sando Falin A
+
+Web Development, UI/UX Design
+
+https://github.com/Falin-dev
+
+https://www.linkedin.com/in/sandofalin
+
+Python, JavaScript, React, Figma, MySQL, Photoshop,Competitive
+Illustrator. programming, Learning backend frameworks, business and revenue model, Data Structures and Algorithms.
+
+linkedin.com/infancetony
+
+Gym gain vision
+
+Project 1: Screenshot (optional)
+
+Project 1: Description (3-5 sentences)
+
+https://drive.google.com/open?id=1hiH8RuZs4mFcGcYhMJdCByOshLZXCFua
+It’s about gym fitness tracker
+
+Project 2: Title
+
+Project 2: Link (if available)
+
+Gym gain vision
+
+Project 2: Screenshot (optional)
+
+Project 2: Description (3-5 sentences)
+
+Project 3: Title
+
+Project 3: Link (if available)
+
+Project 3: Screenshot (optional)
+
+Project 3: Description (3-5 sentences)
+
+Project 4: Title (optional)
+
+Project 4: Link (if available)
+
+https://drive.google.com/open?id=1FAHfLyCyBlLtobvEvCzIQrrO76B_kge4
+Advance of gym fitness tracker
+
+https://www.linkedin.com/in/aparna-suresh-79276235a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app
+Edventra
+https://edventra-ai-powered-bwv6.bolt.host/
+https://drive.google.com/open?id=1mTEOzcG8xTPC8J_7ORoBcy4KMVKsVEnC
+This project is something useful for students Medimind
+where they can interact with
+https://medimind-compassionate-care.lovable.app/
+their teachers classmates abouthttps://drive.google.com/open?id=14VrJico_R9nno82NTGDnJZfd_gs1pYMall their doubts using this app ..it also include
+This is an
+ai chatbot
+app related
+where
+to they
+healthcare
+would where
+share their
+patients
+ideas
+would
+related
+easily
+to academics
+know their they
+health
+can
+progress
+even clarify
+and also
+their patients
+doubts can easily communicate with doctors
+
+https://www.linkedin.com/in/sandofalin
+
+Sports Dot
+
+sportsdot.in
+
+https://drive.google.com/open?id=1fFPnrN8CAkKpg05S94tsvbJwxQdk_Mng
+A website which promotes and describes a gym-customer
+The Aprilia Queries
+app. Built using HTML CSS and JavaScript.
+
+https://drive.google.com/open?id=1bFucxJQzQT7KHQLO3OIlZM7_6oI876CW
+A RAG based chatbot. The user manual was fed as the data in the vector database. Ollama was used as the LLM.
+
+Project 4: Screenshot (optional)
+
+Project 4: Description (3-5 sentences)
+
+Project 5: Title (optional)
+
+Project 5: Link (if available)
+
+Project 5: Screenshot (optional)
+
+Project 5: Description (3-5 sentences)
+
+What are your key skillsets? (e.g., Python, JavaScript,What
+AWS,are
+Figma,
+your etc.)
+current interests? (e.g., learning new technologies, open-source contributions, competitive programming, etc.)
+React,Java(Springboot),AWS
+
+DevOps
+
+SQL
+
+Do master in Data Engineering
+
+Figma,Python
+
+Learning new technologies
+
+Python
+
+I am interested to learning data analysis in python
+
+
