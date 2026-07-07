@@ -3,14 +3,25 @@ import { Link } from 'react-router-dom'
 
 const EVENTS = [
   {
+    title: 'Lumina Radiance Rally',
+    date: 'Date Will Be Anounced',
+    description:
+      '**Lumina Radiance Rally** is a Event, where Bashers can showcase their presentation skills, knowledge, and confidence through engaging topic presentations. Participants will be evaluated by a panel of judges, and outstanding performers will be recognized with awards for their excellence. ',
+    cta: 'Register Now',
+    link: '/events/lumina-radiance-rally/register',
+    category: 'Inter-Clan',
+    status: 'Upcoming',
+    image: '/rally.webp',
+    featured: true,
+  },
+  {
     title: 'Rookie Weekly Bash',
     date: 'Jan-31, 2026 · 9:30 AM - 3:30 PM IST',
     description:
       'Where rookies meet Bashers! Get introduced to all clans, explore their unique cultures, and choose your squad. Your clan journey starts here.',
     category: 'Community',
-    status: 'Upcoming',
+    status: 'Wrapped Up',
     image: '/eve_10.jpg',
-    featured: true,
   },
   {
     title: 'Project Showcase',

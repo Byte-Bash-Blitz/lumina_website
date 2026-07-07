@@ -11,7 +11,7 @@ const JoinClan = () => {
   const handleSubmit = (e) => {
     e.preventDefault()
     if (!formData.agreeRules) {
-      alert('Please agree to the Clan Rules before submitting.')
+      alert('Please check the Gallery before submitting.')
       return
     }
     console.log('Form submitted:', formData)
@@ -109,11 +109,11 @@ const JoinClan = () => {
                 className="mt-1 w-4 h-4 accent-minecraft-green"
               />
               <label htmlFor="agreeRules" className="text-white text-sm">
-                I have read and agree to the{' '}
-                <a href="/rules" className="text-cyan-400 hover:text-cyan-300 underline">
-                  Clan Rules
+                I have checked the{' '}
+                <a href="/gallery" className="text-cyan-400 hover:text-cyan-300 underline">
+                  Gallery
                 </a>
-                .
+                {' '}and agree to join the clan.
               </label>
             </div>
 

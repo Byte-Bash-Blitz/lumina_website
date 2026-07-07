@@ -4,11 +4,13 @@ import Navbar from './components/Navbar'
 import Home from './pages/Home'
 import MembersPage from './pages/MembersPage'
 import EventsPage from './pages/EventsPage'
+import ProjectsPage from './pages/ProjectsPage'
 import JoinClanPage from './pages/JoinClanPage'
-import RulesPage from './pages/RulesPage'
+import GalleryPage from './pages/GalleryPage'
 import MemberProfilePage from './pages/MemberProfilePage'
 import ProjectShowcasePage from './pages/ProjectShowcasePage'
 import ProjectShowcaseRegisterPage from './pages/ProjectShowcaseRegisterPage'
+import RallyRegistrationPage from './pages/RallyRegistrationPage'
 import DynamicCursor from './components/DynamicCursor'
 
 function ScrollRestoration() {
@@ -43,10 +45,12 @@ function App() {
           <Route path="/members" element={<MembersPage />} />
           <Route path="/member/:id" element={<MemberProfilePage />} />
           <Route path="/events" element={<EventsPage />} />
+          <Route path="/projects" element={<ProjectsPage />} />
+          <Route path="/events/lumina-radiance-rally/register" element={<RallyRegistrationPage />} />
           <Route path="/events/project-showcase" element={<ProjectShowcasePage />} />
           <Route path="/events/project-showcase/register" element={<ProjectShowcaseRegisterPage />} />
-          <Route path="/join" element={<JoinClanPage />} />
-          <Route path="/rules" element={<RulesPage />} />
+          <Route path="/gallery" element={<GalleryPage />} />
+          <Route path="/rules" element={<GalleryPage />} />
         </Routes>
       </div>
     </Router>

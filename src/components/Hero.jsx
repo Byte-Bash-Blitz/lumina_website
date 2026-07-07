@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import WalterWhite from './WalterWhite'
 
 const Hero = () => {
@@ -28,16 +29,19 @@ const Hero = () => {
       iconType: 'news',
       title: 'Latest Clan News',
       description: 'A snippet of the most recent announcement about our latest server updates.',
+      href: '/events',
     },
     {
       iconType: 'members',
       title: 'Meet Our Members',
       description: 'Check out our community page and see the amazing people in our clan.',
+      href: '/members',
     },
     {
       iconType: 'events',
       title: 'Upcoming Events',
       description: 'Join us for the next build-off! Details on our events page.',
+      href: '/events',
     },
   ]
 
@@ -77,9 +81,10 @@ const Hero = () => {
           {/* Info Cards - Below Character in Row */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {cards.map((card, index) => (
-              <div
+              <Link
                 key={index}
-                className="bg-minecraft-dark border-4 border-black/50 p-4 relative z-10"
+                to={card.href}
+                className="bg-minecraft-dark border-4 border-black/50 p-4 relative z-10 transition-transform duration-200 hover:-translate-y-1 hover:border-minecraft-green focus:outline-none focus:ring-2 focus:ring-minecraft-green"
               >
                 {/* Icon - Pixel art style */}
                 <div className="mb-4">
@@ -95,7 +100,7 @@ const Hero = () => {
                 <p className="text-minecraft-gray text-xs leading-relaxed">
                   {card.description}
                 </p>
-              </div>
+              </Link>
             ))}
           </div>
         </div>

@@ -99,6 +99,68 @@
     -webkit-line-clamp: 2;
     line-clamp: 2;
   }
+
+  .gallery-orb {
+    position: absolute;
+    border-radius: 9999px;
+    filter: blur(20px);
+    opacity: 0.55;
+    mix-blend-mode: screen;
+  }
+
+  .gallery-orb-one {
+    top: 10%;
+    left: 6%;
+    width: 180px;
+    height: 180px;
+    background: rgba(123, 255, 206, 0.28);
+    animation: galleryDrift 12s ease-in-out infinite;
+  }
+
+  .gallery-orb-two {
+    top: 22%;
+    right: 8%;
+    width: 220px;
+    height: 220px;
+    background: rgba(85, 85, 255, 0.22);
+    animation: galleryDrift 16s ease-in-out infinite reverse;
+  }
+
+  .gallery-orb-three {
+    bottom: 8%;
+    left: 42%;
+    width: 260px;
+    height: 260px;
+    background: rgba(255, 170, 0, 0.16);
+    animation: galleryDrift 14s ease-in-out infinite;
+  }
+
+  @keyframes galleryDrift {
+    0%, 100% {
+      transform: translate3d(0, 0, 0) scale(1);
+    }
+    50% {
+      transform: translate3d(0, -18px, 0) scale(1.08);
+    }
+  }
+
+  @keyframes galleryFloat {
+    0%, 100% {
+      transform: translateY(0px) rotate(0deg);
+    }
+    50% {
+      transform: translateY(-10px) rotate(0.4deg);
+    }
+  }
+
+  @keyframes galleryGlow {
+    0%, 100% {
+      text-shadow: 0 0 10px rgba(123, 255, 206, 0.18), 2px 2px 0 rgba(0, 0, 0, 0.8);
+    }
+    50% {
+      text-shadow: 0 0 24px rgba(123, 255, 206, 0.45), 0 0 52px rgba(85, 85, 255, 0.18), 2px 2px 0 rgba(0, 0, 0, 0.8);
+    }
+  }
   
   /* Bounty Poster Styles */
   .bounty-paper {

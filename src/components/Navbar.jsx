@@ -8,7 +8,8 @@ const Navbar = ({ scrolled }) => {
     { name: 'HOME', href: '/' },
     { name: 'MEMBERS', href: '/members' },
     { name: 'EVENTS', href: '/events' },
-    { name: 'RULES', href: '/rules' },
+    { name: 'PROJECTS', href: '/projects' },
+    { name: 'GALLERY', href: '/gallery' },
   ]
 
   return (
@@ -43,15 +44,6 @@ const Navbar = ({ scrolled }) => {
                 </Link>
               )
             ))}
-          </div>
-
-          {/* CTA Button */}
-          <div className="hidden md:block">
-            <Link to="/join">
-              <button className="px-4 py-2 bg-minecraft-green hover:bg-green-500 text-black text-xs font-bold transform transition-all border-2 border-black/50">
-                JOIN CLAN
-              </button>
-            </Link>
           </div>
 
           {/* Mobile menu button */}

@@ -149,18 +149,6 @@ const Home = () => {
             </div>
           </div>
 
-          {/* Join Our Adventure Section */}
-          <div className="mt-6 bg-minecraft-dark border-4 border-black/50 p-6 sm:p-8">
-            <h2 className="text-2xl sm:text-3xl font-bold text-minecraft-green mb-4 minecraft-shadow">
-              Join Our Adventure
-            </h2>
-            <p className="text-minecraft-gray text-xs sm:text-sm mb-6 leading-relaxed">
-              Ready to build, explore, and conquer with us? We're always looking for new adventurers to join our ranks. Click the button below to start your journey with the PixelCrafters!
-            </p>
-            <button className="px-6 py-3 bg-minecraft-green hover:bg-green-600 text-black text-xs sm:text-sm font-bold border-2 border-black/50 transition-all transform hover:scale-105">
-              Join Our Clan!
-            </button>
-          </div>
         </div>
       </section>
     </div>
