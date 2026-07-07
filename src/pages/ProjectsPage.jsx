@@ -25,7 +25,7 @@ const projects = [
     link: 'https://personal-portfolio-vishal.vercel.app/',
   },
 
-   {
+  {
     name: 'Windows-7-Portfolio-Naveen',
     owner: 'Naveen',
     category: 'Personal Portfolio',
@@ -45,6 +45,17 @@ const projects = [
       'A polished experience focused on visual storytelling, layout clarity, and immersive digital presentation.',
     link: 'https://aparna-mindscape.lovable.app/',
   },
+  {
+    name: 'SQL Mobile Playground',
+    owner: 'Naveen',
+    category: 'Learn / Practice SQL',
+    status: 'Live',
+    stack: 'Python · SQL · Web',
+    description:
+      'A cutting-edge SQL learning platform built for the modern developer. Practice complex queries, optimize your database skills, and become a SQL expert right from your mobile device.',
+    link: 'https://sql-practice-mobile-playground.vercel.app/',
+  },
+  
 
   
 ]
