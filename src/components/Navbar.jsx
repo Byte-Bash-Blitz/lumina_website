@@ -87,11 +87,7 @@ const Navbar = ({ scrolled }) => {
                 </Link>
               )
             ))}
-            <Link to="/join" onClick={() => setMobileMenuOpen(false)}>
-              <button className="w-full px-4 py-3 bg-minecraft-green hover:bg-green-500 text-black text-xs font-bold border-2 border-black/50">
-                JOIN CLAN
-              </button>
-            </Link>
+
           </div>
         </div>
       )}

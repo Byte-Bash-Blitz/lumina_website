@@ -5,57 +5,61 @@ import CherryBlossoms from '../components/CherryBlossoms'
 
 const Home = () => {
   const visionElements = [
-    {
-      icon: '🧭',
-      title: 'Curiosity as Our Compass',
-      description: 'We navigate the seas of knowledge with wonder as our guide',
-    },
-    {
-      icon: '💎',
-      title: 'Learning as Our Treasure',
-      description: 'Every skill mastered is a gem in our collective bounty',
-    },
-    {
-      icon: '🚀',
-      title: 'Innovation Through Exploration',
-      description: 'We chart new territories in technology and creativity',
-    },
-    {
-      icon: '⚓',
-      title: 'Unity in Adventure',
-      description: 'Together we sail further than any lone explorer could',
-    },
-  ]
+  {
+    icon: '💡',
+    title: 'Learn. Build. Bash.',
+    description:
+      'Every challenge is an opportunity to sharpen our skills and become stronger developers together.',
+  },
+  {
+    icon: '⚒️',
+    title: 'Projects Over Promises',
+    description:
+      'We transform ideas into real-world applications through teamwork, creativity, and consistency.',
+  },
+  {
+    icon: '🚀',
+    title: 'Innovation Without Limits',
+    description:
+      'From beginner projects to advanced solutions, we constantly explore new technologies and possibilities.',
+  },
+  {
+    icon: '🤝',
+    title: 'One Clan. One Journey.',
+    description:
+      'Lumina grows together by sharing knowledge, mentoring each other, and celebrating every milestone.',
+  },
+];
 
-  const goals = [
-    {
-      icon: '🎯',
-      text: 'Conquer the Ender Dragon as a team each season.',
-    },
-    {
-      icon: '🏗️',
-      text: 'Build a massive, collaborative capital city.',
-    },
-    {
-      icon: '📅',
-      text: 'Host weekly community events and build-offs.',
-    },
-  ]
+const goals = [
+  {
+    icon: '💻',
+    text: 'Master programming through real-world projects and collaborative learning.',
+  },
+  {
+    icon: '⚡',
+    text: 'Build innovative applications that strengthen technical and creative skills.',
+  },
+  {
+    icon: '🎤',
+    text: 'Develop confident communicators through presentations, teamwork, and community events.',
+  },
+];
 
-  const achievements = [
-    {
-      icon: '🏆',
-      text: 'Server-First Wither Kill Trophy.',
-    },
-    {
-      icon: '🏅',
-      text: 'Winner of the Annual Build Competition.',
-    },
-    {
-      icon: '🗺️',
-      text: 'Mapped the entire Overworld continent.',
-    },
-  ]
+const achievements = [
+  {
+    icon: '👊',
+    text: 'Proud clan of the Byte-Bash-Blitz technical community.',
+  },
+  {
+    icon: '🌟',
+    text: 'Organized technical events, coding challenges, and knowledge-sharing sessions.',
+  },
+  {
+    icon: '🏆',
+    text: 'Empowering Rookies to grow into skilled Bashers through continuous learning.',
+  },
+];
 
   return (
     <div>

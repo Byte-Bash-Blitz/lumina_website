@@ -3,14 +3,21 @@ import { AnimatePresence, motion } from 'framer-motion'
 import { FaChevronLeft, FaChevronRight, FaTimes } from 'react-icons/fa'
 
 const galleryFolderImages = [
-  '/Gallery/abinw.webp',
+  
   '/Gallery/badge26.webp',
   '/Gallery/basher.webp',
   '/Gallery/bd26f.webp',
+  '/Gallery/DailyGathering1.webp',
+  '/Gallery/OnlineGathering1.webp',
   '/Gallery/bestrookie.webp',
   '/Gallery/clan1.webp',
+  '/Gallery/DailyGathering2.webp',
+  '/Gallery/Idea.webp',
   '/Gallery/clanintro.webp',
   '/Gallery/dia.webp',
+  '/Gallery/DailyGathering3.webp',
+  '/Gallery/WeeklyBash.webp',
+  '/Gallery/abinw.webp',
   '/Gallery/googlesa.webp',
   '/Gallery/guvisa.webp',
   '/Gallery/hamdhansb.webp',
@@ -20,18 +27,24 @@ const galleryFolderImages = [
 ]
 
 const filenameTitleOverrides = {
-  abinw: 'Achievement Abin',
   badge26: 'Badge Day 26',
   basher: 'Basher Emblem',
   bd26f: 'Badge Day Oath',
+  DailyGathering1: 'Daily Gathering ',
+  OnlineGathering1: 'Online Gathering ',
   bestrookie: 'Best Rookie 26',
   clan1: 'Clan Intro I',
+  DailyGathering2: 'Daily Gathering ',
+  Idea: 'Idea Presentation',
   clanintro: 'Rookie Clan Intro',
   dia: 'Data Refinery Contest',
+  DailyGathering3: 'Daily Gathering ',
+  WeeklyBash: 'Weekly Bash',
+  abinw: 'Achievement Abin',
   googlesa: 'Google Student Ambassador',
   guvisa: 'Guvi Student Ambassador',
   hamdhansb: 'Special Badge Hamdhan',
-  'jenishsb,webp': 'Special Badge Jenish',
+  jenishsb: 'Special Badge Jenish',
   prsh: 'Project Showcase',
   wb: 'Weekly Bash',
 }

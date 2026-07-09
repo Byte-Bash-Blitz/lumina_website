@@ -3,96 +3,156 @@ import React, { useState } from 'react'
 const JoinClan = () => {
   const [formData, setFormData] = useState({
     username: '',
-    age: '',
-    reason: '',
+    level: '',
+    email: '',
+    quest: '',
+    message: '',
     agreeRules: false,
   })
 
   const handleSubmit = (e) => {
     e.preventDefault()
+
     if (!formData.agreeRules) {
-      alert('Please check the Gallery before submitting.')
+      alert('Please visit the Gallery before joining the Guild.')
       return
     }
-    console.log('Form submitted:', formData)
-    alert('Application submitted successfully!')
+
+    console.log('Application Submitted:', formData)
+    alert('🎉 Your Guild application has been sent successfully!')
   }
 
   const handleChange = (e) => {
     const { name, value, type, checked } = e.target
-    setFormData(prev => ({
+
+    setFormData((prev) => ({
       ...prev,
-      [name]: type === 'checkbox' ? checked : value
+      [name]: type === 'checkbox' ? checked : value,
     }))
   }
 
   return (
     <section className="min-h-screen py-20 bg-minecraft-darker flex items-center justify-center">
       <div className="max-w-3xl w-full mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Form Container */}
         <div className="bg-amber-800 border-4 border-amber-900 p-8 sm:p-12">
+
           {/* Header */}
           <div className="text-center mb-8">
             <h1 className="text-3xl sm:text-4xl font-bold text-white mb-4 minecraft-shadow">
-              Join The Clan
+              🏰 Meet the Builders
             </h1>
+
             <p className="text-white text-sm sm:text-base leading-relaxed">
-              Fill out the form below to apply.<br />
-              We're excited to have you join our adventure!
+              Ready to begin your adventure?<br />
+              Complete your Guild application below.
             </p>
           </div>
 
-          {/* Form */}
           <form onSubmit={handleSubmit} className="space-y-6">
-            {/* Minecraft Username */}
+
+            {/* Player Name */}
             <div>
-              <label htmlFor="username" className="block text-white text-sm font-bold mb-2">
-                Minecraft Username
+              <label
+                htmlFor="username"
+                className="block text-white text-sm font-bold mb-2"
+              >
+                🎮 Player Name
               </label>
+
               <input
                 type="text"
                 id="username"
                 name="username"
                 value={formData.username}
                 onChange={handleChange}
-                placeholder="Steve"
+                placeholder="Enter your Gamer Tag..."
                 required
                 className="w-full px-4 py-3 bg-white text-black text-sm border-2 border-black/50 focus:outline-none focus:border-minecraft-green"
               />
             </div>
 
-            {/* Age */}
+            {/* Experience Level */}
             <div>
-              <label htmlFor="age" className="block text-white text-sm font-bold mb-2">
-                Age
+              <label
+                htmlFor="level"
+                className="block text-white text-sm font-bold mb-2"
+              >
+                ⭐ Experience Level
               </label>
+
               <input
                 type="number"
-                id="age"
-                name="age"
-                value={formData.age}
+                id="level"
+                name="level"
+                value={formData.level}
                 onChange={handleChange}
-                placeholder="18"
-                required
+                placeholder="Enter your level..."
                 min="1"
-                max="120"
+                max="100"
+                required
                 className="w-full px-4 py-3 bg-white text-black text-sm border-2 border-black/50 focus:outline-none focus:border-minecraft-green"
               />
             </div>
 
-            {/* Why do you want to join? */}
+            {/* Email */}
             <div>
-              <label htmlFor="reason" className="block text-white text-sm font-bold mb-2">
-                Why do you want to join?
+              <label
+                htmlFor="email"
+                className="block text-white text-sm font-bold mb-2"
+              >
+                🦉 Owl Mail
               </label>
-              <textarea
-                id="reason"
-                name="reason"
-                value={formData.reason}
+
+              <input
+                type="email"
+                id="email"
+                name="email"
+                value={formData.email}
                 onChange={handleChange}
-                placeholder="Tell us a little about yourself..."
+                placeholder="Where should we send our owl?"
                 required
-                rows="6"
+                className="w-full px-4 py-3 bg-white text-black text-sm border-2 border-black/50 focus:outline-none focus:border-minecraft-green"
+              />
+            </div>
+
+            {/* Quest Request */}
+            <div>
+              <label
+                htmlFor="quest"
+                className="block text-white text-sm font-bold mb-2"
+              >
+                📜 Quest Request
+              </label>
+
+              <textarea
+                id="quest"
+                name="quest"
+                value={formData.quest}
+                onChange={handleChange}
+                placeholder="Describe your quest..."
+                rows="4"
+                required
+                className="w-full px-4 py-3 bg-white text-black text-sm border-2 border-black/50 focus:outline-none focus:border-minecraft-green resize-none"
+              />
+            </div>
+
+            {/* Message */}
+            <div>
+              <label
+                htmlFor="message"
+                className="block text-white text-sm font-bold mb-2"
+              >
+                💬 Message
+              </label>
+
+              <textarea
+                id="message"
+                name="message"
+                value={formData.message}
+                onChange={handleChange}
+                placeholder="Tell us about your adventure..."
+                rows="5"
+                required
                 className="w-full px-4 py-3 bg-white text-black text-sm border-2 border-black/50 focus:outline-none focus:border-minecraft-green resize-none"
               />
             </div>
@@ -108,24 +168,32 @@ const JoinClan = () => {
                 required
                 className="mt-1 w-4 h-4 accent-minecraft-green"
               />
-              <label htmlFor="agreeRules" className="text-white text-sm">
-                I have checked the{' '}
-                <a href="/gallery" className="text-cyan-400 hover:text-cyan-300 underline">
+
+              <label
+                htmlFor="agreeRules"
+                className="text-white text-sm"
+              >
+                I have explored the{' '}
+                <a
+                  href="/gallery"
+                  className="text-cyan-400 hover:text-cyan-300 underline"
+                >
                   Gallery
-                </a>
-                {' '}and agree to join the clan.
+                </a>{' '}
+                and I'm ready to join the Guild.
               </label>
             </div>
 
-            {/* Submit Button */}
+            {/* Submit */}
             <div className="pt-4">
               <button
                 type="submit"
                 className="w-full px-8 py-4 bg-minecraft-green hover:bg-green-600 text-black text-sm font-bold border-4 border-black/50 transition-all transform hover:scale-105"
               >
-                Submit Application
+                ⚔️ Begin Your Adventure
               </button>
             </div>
+
           </form>
         </div>
       </div>

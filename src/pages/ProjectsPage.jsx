@@ -55,6 +55,16 @@ const projects = [
       'A cutting-edge SQL learning platform built for the modern developer. Practice complex queries, optimize your database skills, and become a SQL expert right from your mobile device.',
     link: 'https://sql-practice-mobile-playground.vercel.app/',
   },
+  {
+    name: 'Tharun Portfolio',
+    owner: 'Tharun',
+    category: 'Personal Portfolio',
+    status: 'Live',
+    stack: 'React · lovable',
+    description:
+      'A personal portfolio website showcasing Tharun\'s projects, skills, and experience in a visually appealing and interactive manner.',
+    link: 'https://tharunkrishnaportfolio.lovable.app',
+  },
   
 
   

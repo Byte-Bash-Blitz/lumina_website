@@ -50,7 +50,7 @@ const EVENTS = [
       'Meet the newest recruits, celebrate squad wins, and sync with partner crews across the network.',
     cta: 'Say Hello',
     category: 'Community',
-    status: 'Upcoming',
+    status: 'Wrapped',
     image: '/eve_3.jpg',
   },
   {
@@ -59,7 +59,7 @@ const EVENTS = [
     description: 'War-room intel, board review, and weeklong raid planning for internal squads only.',
     cta: 'RSVP for HQ',
     category: 'Inter-Clan',
-    status: 'Upcoming',
+    status: 'Wrapped',
     image: '/eve_4.jpg',
   },
   // {
