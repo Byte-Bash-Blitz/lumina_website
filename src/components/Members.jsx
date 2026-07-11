@@ -250,7 +250,7 @@ const Members = () => {
           </h1>
 
           <div className="text-minecraft-green text-sm font-bold">
-            ⛏️ MINECRAFT CLAN ⛏️
+            GUILD MASTERS
           </div>
 
           <p className="text-minecraft-gray text-base max-w-2xl mx-auto leading-relaxed mt-6 font-semibold">
