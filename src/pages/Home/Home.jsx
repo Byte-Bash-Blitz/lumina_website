@@ -22,10 +22,9 @@ const SectionFallback = () => (
 const Home = () => {
   return (
     <div>
+      <Hero />
       <FallingStraw />
       <CherryBlossoms />
-
-      <Hero />
 
       <UpcomingEventPopup />
 

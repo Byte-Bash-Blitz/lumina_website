@@ -49,7 +49,7 @@ const Hero = () => {
 useEffect(() => {
   const timer = setTimeout(() => {
     setShowMascot(true);
-  }, 200);
+  }, 300);
 
   return () => clearTimeout(timer);
 }, []);
@@ -90,9 +90,14 @@ useEffect(() => {
             Welcome to Lumina
           </h1>
           <p className="mt-4 text-base sm:text-lg text-mc-gold minecraft-shadow">Where Builders Become Legends</p>
-          <p className="mt-3 max-w-2xl mx-auto text-xs sm:text-sm text-minecraft-gray leading-relaxed">
-            Join a clan of students turning curiosity into code — one project, one build, one milestone at a time.
-          </p>
+         <p
+  className="mt-3 max-w-2xl mx-auto text-xs sm:text-sm leading-relaxed text-[#5B4A3C]"
+  style={{
+    textShadow: "2px 2px 0 rgba(255,255,255,0.2)",
+  }}
+>
+  Join a clan of students turning curiosity into code — one project, one build, one milestone at a time.
+</p>
         </Reveal>
 
         {/* Mascot centerpiece — pedestal, portal glow, idle float */}
@@ -134,19 +139,28 @@ useEffect(() => {
           {EXPLORE_LINKS.map((card, index) => (
             <Reveal key={card.title} delay={index * 120}>
               <Link
-                to={card.href}
-                className="group block h-full bg-mc-slate/70 backdrop-blur-[2px] border-4 border-black/50 p-5 transition-transform duration-300 ease-out hover:-translate-y-1 hover:border-mc-emerald focus-visible:outline focus-visible:outline-2 focus-visible:outline-mc-emerald"
-              >
-                <PixelIcon
-                  name={card.icon}
-                  size={36}
-                  className="text-minecraft-gray mb-4 group-hover:text-mc-emerald transition-colors duration-300"
-                />
-                <h3 className="text-xs font-bold text-white mb-2 minecraft-shadow uppercase tracking-wide">
-                  {card.title}
-                </h3>
-                <p className="text-minecraft-gray text-xs leading-relaxed">{card.description}</p>
-              </Link>
+  to={card.href}
+  className="group block h-full bg-[#1f2937]/78 backdrop-blur-[2px] border-4 border-white/20 p-5 transition-transform duration-300 ease-out hover:-translate-y-1 hover:border-mc-emerald focus-visible:outline focus-visible:outline-2 focus-visible:outline-mc-emerald"
+>
+  <PixelIcon
+    name={card.icon}
+    size={36}
+    className="text-white mb-4 drop-shadow-md group-hover:text-mc-emerald transition-colors duration-300"
+  />
+
+  <h3 className="text-xs font-bold text-white mb-2 minecraft-shadow uppercase tracking-wide">
+    {card.title}
+  </h3>
+
+  <p
+    className="text-gray-200 text-xs leading-relaxed"
+    style={{
+      textShadow: "1px 1px 2px rgba(0,0,0,.75)",
+    }}
+  >
+    {card.description}
+  </p>
+</Link>
             </Reveal>
           ))}
         </div>
