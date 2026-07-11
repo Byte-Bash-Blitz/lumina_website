@@ -180,7 +180,7 @@ const JoinClan = () => {
                 >
                   Gallery
                 </a>{' '}
-                and I'm ready to join the Guild.
+                and the Guild.
               </label>
             </div>
 

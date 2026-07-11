@@ -1,2 +1,2 @@
-[![Lumina Logo](logo.png)](https://mine-lumina.vercel.app/)
+[![Lumina Logo](logo.webp)](https://lumina.bytebashblitz.org/)
 

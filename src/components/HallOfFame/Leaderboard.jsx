@@ -39,15 +39,20 @@ async function fetchGithubStreak(username) {
   return streak;
 }
 
-// LeetCode: total problems solved via the public leetcode-stats-api.
+// LeetCode: Total problems solved (via your Vercel API)
 async function fetchLeetcodeSolved(username) {
-  const res = await fetch(`https://leetcode-api-faisalshohag.vercel.app/${username}`);
-  if (!res.ok) throw new Error("LeetCode API error");
-  const data = await res.json();
-  if (typeof data.totalSolved !== "number") throw new Error("Malformed response");
-  return data.totalSolved;
-}
+  console.log("Fetching:", username);
 
+  const res = await fetch(
+    `https://leetcode-api-jade.vercel.app/api/leetcode?username=${encodeURIComponent(username)}`
+  );
+
+  const data = await res.json();
+
+  console.log(data);
+
+  return data.totalSolved ?? 0;
+}
 // Chess.com: Rapid rating via the official public Chess.com API.
 async function fetchChessRapidRating(username) {
   const res = await fetch(`https://api.chess.com/pub/player/${username}/stats`);
@@ -65,10 +70,11 @@ const TAB_CONFIG = {
     getValue: (member) => fetchGithubStreak(member.github),
   },
   leetcode: {
-    label: "PROBLEMS",
-    usernameKey: "leetcode",
-    getValue: (member) => fetchLeetcodeSolved(member.leetcode),
-  },
+  label: "PROBLEMS",
+  usernameKey: "leetcode",
+  getValue: (member) => fetchLeetcodeSolved(member.leetcode),
+},
+
   chess: {
     label: "RATING",
     usernameKey: "chess",

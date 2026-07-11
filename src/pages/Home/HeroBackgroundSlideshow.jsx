@@ -21,9 +21,11 @@ const HeroBackgroundSlideshow = ({ images, intervalMs = 12000 }) => {
       {images.map((src, index) => (
         <div
           key={src}
-          className={`absolute inset-0 bg-cover bg-center transition-opacity duration-[2000ms] ease-in-out motion-reduce:transition-none ${
-            index === activeIndex ? 'opacity-100 animate-mc-zoom motion-reduce:animate-none' : 'opacity-0'
-          }`}
+          className={`absolute inset-0 bg-cover bg-center transition-opacity duration-1000 ease-linear motion-reduce:transition-none ${
+  index === activeIndex
+    ? 'opacity-100'
+    : 'opacity-0'
+}`}
           style={{ backgroundImage: `url('${src}')` }}
         />
       ))}

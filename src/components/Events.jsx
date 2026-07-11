@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 const EVENTS = [
   {
     title: 'Lumina Radiance Rally',
-    date: 'Date Will Be Anounced',
+    date: ' Starts On July 20, 2026 · 8:30 PM IST',
     description:
       '**Lumina Radiance Rally** is a Event, where Bashers can showcase their presentation skills, knowledge, and confidence through engaging topic presentations. Participants will be evaluated by a panel of judges, and outstanding performers will be recognized with awards for their excellence. ',
     cta: 'Register Now',

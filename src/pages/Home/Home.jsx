@@ -21,49 +21,34 @@ const SectionFallback = () => (
 
 const Home = () => {
   return (
-<div>
-  <FallingStraw />
-  <CherryBlossoms />
+    <div>
+      <Hero />
+      <FallingStraw />
+      <CherryBlossoms />
 
-  <Hero />
+      <UpcomingEventPopup />
 
-  <UpcomingEventPopup />
+      <Suspense fallback={<SectionFallback />}>
+        <QuickStats />
+      </Suspense>
 
-  <Suspense fallback={<SectionFallback />}>
-    <QuickStats />
-  </Suspense>
+      <Suspense fallback={<SectionFallback />}>
+        <QuestBook />
+      </Suspense>
 
-  <Suspense fallback={<SectionFallback />}>
-    <QuestBook />
-  </Suspense>
+      <Suspense fallback={<SectionFallback />}>
+        <WhyJoinLumina />
+      </Suspense>
 
-  <Suspense fallback={<SectionFallback />}>
-    <WhyJoinLumina />
-  </Suspense>
+      <Suspense fallback={<SectionFallback />}>
+        <GalleryPreview />
+      </Suspense>
 
-  <Suspense fallback={<SectionFallback />}>
-    <GalleryPreview />
-  </Suspense>
-
-  <Suspense fallback={<SectionFallback />}>
-    <JourneyTimeline />
-  </Suspense>
-
-  <Suspense fallback={<SectionFallback />}>
-    <CallToAction />
-  </Suspense>
-</div>
-    
+      <Suspense fallback={<SectionFallback />}>
+        <CallToAction />
+      </Suspense>
+    </div>
   )
 }
-<>
-  <Hero />
-
-  <UpcomingEventPopup />
-
-  <QuickStats />
-  <QuestBook />
-  ...
-</>
 
 export default Home

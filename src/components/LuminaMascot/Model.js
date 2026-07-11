@@ -195,7 +195,7 @@ export function loadMascotModel(candidatePaths, onProgress) {
     root.name = "LuminaMascotRoot";
     gltf.scene.traverse((node) => {
     if (node.isMesh) {
-        node.material.wireframe = true;
+        node.material.wireframe = false;
     }
     });
 

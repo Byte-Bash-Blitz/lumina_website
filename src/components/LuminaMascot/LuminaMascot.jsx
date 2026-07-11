@@ -111,27 +111,38 @@ export default function LuminaMascot({ modelPaths = DEFAULT_MODEL_CANDIDATES }) 
       resizeComposer(composer, width, height);
     });
 
-    function renderLoop() {
-      rafId = requestAnimationFrame(renderLoop);
-      if (!isVisibleRef.current) return;
+let lastFrame = 0;
+const FPS = 30;
+const FRAME_TIME = 1000 / FPS;
 
-      const dt = Math.min(0.1, clock.getDelta());
-      const elapsed = clock.getElapsedTime();
+function renderLoop(time) {
+  rafId = requestAnimationFrame(renderLoop);
 
-      if (modelRoot && animationController) {
-        animationController.setMouse(mouseRef.current);
-        animationController.update(elapsed, dt);
-        mouseController.setFromMouse(mouseRef.current);
-        mouseController.update(modelRoot, dt);
-        shadow.update(animationController.floatY, 0.08);
-      }
+  if (!isVisibleRef.current) return;
 
-      particles.update(elapsed);
-      settleBloom(bloomPass, dt);
-      settleLights(lights, dt);
+  if (time - lastFrame < FRAME_TIME) return;
+  lastFrame = time;
 
-      sceneManager.render();
-    }
+  const dt = Math.min(0.1, clock.getDelta());
+  const elapsed = clock.getElapsedTime();
+
+  if (modelRoot && animationController) {
+    animationController.setMouse(mouseRef.current);
+    animationController.update(elapsed, dt);
+
+    mouseController.setFromMouse(mouseRef.current);
+    mouseController.update(modelRoot, dt);
+
+    shadow.update(animationController.floatY, 0.08);
+  }
+
+  particles.update(elapsed);
+
+  settleBloom(bloomPass, dt);
+  settleLights(lights, dt);
+
+  sceneManager.render();
+}
 
     loadMascotModel(modelPaths, (p) => {
       if (!disposed) setProgress(p);

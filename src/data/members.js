@@ -8,7 +8,7 @@ export const members = [
     github: "akshaya-1806",
     leetcode: "akshaya-1806",
     chess: "",
-    books: 0,
+    books: 10,
   },
   {
     id: "aparna",
@@ -17,7 +17,7 @@ export const members = [
     github: "Aparna-stack-ux782",
     leetcode: "Aparna-stack-ux782",
     chess: "",
-    books: 0,
+    books: 10,
   },
   {
     id: "abin",
@@ -26,7 +26,7 @@ export const members = [
     github: "abin-i",
     leetcode: "abin-i",
     chess: "",
-    books: 0,
+    books: 22,
   },
   {
     id: "vishal",
@@ -35,7 +35,7 @@ export const members = [
     github: "Vishal-46",
     leetcode: "Vishal-46",
     chess: "",
-    books: 0,
+    books: 33,
   },
   {
     id: "ajisha",
@@ -44,7 +44,7 @@ export const members = [
     github: "ajisha-v",
     leetcode: "Ajisha-123",
     chess: "",
-    books: 0,
+    books: 25,
   },
   {
     id: "falin",
@@ -53,7 +53,7 @@ export const members = [
     github: "Falin-dev",
     leetcode: "Falin-dev",
     chess: "furooz_ul_haq",
-    books: 0,
+    books: 23,
   },
   {
     id: "hamdhan",
@@ -62,7 +62,7 @@ export const members = [
     github: "Hamdhusam",
     leetcode: "Hamdhusam",
     chess: "",
-    books: 0,
+    books: 22,
   },
   {
     id: "jenish",
@@ -71,7 +71,7 @@ export const members = [
     github: "jenish-prog",
     leetcode: "jenish-prog",
     chess: "",
-    books: 0,
+    books: 24,
   },
   {
     id: "nithisha",
@@ -80,7 +80,7 @@ export const members = [
     github: "nithishanagarani",
     leetcode: "nithishanagarani",
     chess: "",
-    books: 0,
+    books: 26,
   },
   {
     id: "tony",
@@ -89,18 +89,18 @@ export const members = [
     github: "tony-dev",
     leetcode: "tony-coder",
     chess: "",
-    books: 0,
+    books: 32,
   },
   {
     id: "naveen",
     name: "Naveen",
     avatar: "/Avatar_Bounty/naveen.webp",
     github: "nrnnaveen",
-    leetcode: "nrnnaveen",
+    leetcode: "naveen-nrn",
     duolingo: "nrnnaveen",
     duolingoStreak: 139,
     chess: "NrnNaveen",
-    books: 0,
+    books: 1,
   },
   {
     id: "tharun",
@@ -109,7 +109,7 @@ export const members = [
     github: "tharunkrishna107-ship-it",
     leetcode: "tharunkrishna107-ship-it",
     chess: "Tharunkrishna_7",
-    books: 0,
+    books: 1,
   },
   {
     id: "linciya",
@@ -118,7 +118,7 @@ export const members = [
     github: "linciya-s",
     leetcode: "linciya-s",
     chess: "",
-    books: 0,
+    books: 1,
   },
   {
     id: "arshiya",
@@ -127,7 +127,7 @@ export const members = [
     github: "mohamedarshiya-n",
     leetcode: "mohamedarshiya-n",
     chess: "",
-    books: 0,
+    books: 1,
   },
   {
     id: "jeni",
@@ -136,7 +136,7 @@ export const members = [
     github: "jenimelbina-S",
     leetcode: "jenimelbina-S",
     chess: "",
-    books: 0,
+    books: 1,
   },
   {
     id: "aysha",
@@ -145,6 +145,6 @@ export const members = [
     github: "ayishahidha16-cmyk",
     leetcode: "ayishahidha16-cmyk",
     chess: "",
-    books: 0,
+    books: 1,
   },
 ];
