@@ -1,6 +1,15 @@
-import React, { useMemo } from 'react'
+import React, {
+  useMemo,
+  lazy,
+  Suspense,
+  useState,
+  useEffect,
+} from "react";
+
+const LuminaMascot = lazy(() =>
+  import("../../components/LuminaMascot/LuminaMascot")
+);
 import { Link } from 'react-router-dom'
-import LuminaMascot from "../../components/LuminaMascot/LuminaMascot";
 import PixelButton from './PixelButton'
 import HeroBackgroundSlideshow from './HeroBackgroundSlideshow'
 import Reveal from './Reveal'
@@ -8,7 +17,8 @@ import { PixelIcon } from './MinecraftIcons'
 
 // Add more scenes here for a richer rotation (Cherry Blossom Kingdom,
 // Floating Islands, Crystal Cave, etc). Keep to WebP/compressed JPEGs.
-const HERO_BACKGROUNDS = ['/bg5.jpeg','/bg6.jpeg', '/bg2.jpeg', ] //'/bg4.jpeg', '/bg.jpeg'
+
+const HERO_BACKGROUNDS = ['/bg5.webp' ] //'/bg4.jpeg', '/bg.jpeg','/bg6.webp', '/bg2.webp',
 
 const EXPLORE_LINKS = [
   {
@@ -34,6 +44,15 @@ const EXPLORE_LINKS = [
 const EMBER_COUNT = 10
 
 const Hero = () => {
+  const [showMascot, setShowMascot] = useState(false);
+
+useEffect(() => {
+  const timer = setTimeout(() => {
+    setShowMascot(true);
+  }, 200);
+
+  return () => clearTimeout(timer);
+}, []);
   // Computed once — no per-render randomness, so the layout never shifts.
   const embers = useMemo(
     () =>
@@ -87,8 +106,14 @@ const Hero = () => {
               className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-44 h-44 sm:w-56 sm:h-56 rounded-full border-2 border-mc-cyan/40 animate-mc-spin-slow motion-reduce:animate-none"
               aria-hidden="true"
             />
-            <div className="relative animate-mc-float motion-reduce:animate-none">
-              <LuminaMascot />
+            <div className="relative">
+             <div className="w-[320px] h-[320px] flex items-center justify-center">
+  {showMascot && (
+    <Suspense fallback={null}>
+      <LuminaMascot />
+    </Suspense>
+  )}
+</div>
             </div>
             <div className="mx-auto mt-2 h-3 w-28 rounded-full bg-black/50 blur-sm" aria-hidden="true" />
           </div>
