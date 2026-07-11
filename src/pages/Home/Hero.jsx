@@ -49,7 +49,7 @@ const Hero = () => {
 useEffect(() => {
   const timer = setTimeout(() => {
     setShowMascot(true);
-  }, 300);
+  }, 200);
 
   return () => clearTimeout(timer);
 }, []);
