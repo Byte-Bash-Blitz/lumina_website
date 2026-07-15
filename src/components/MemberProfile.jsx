@@ -20,17 +20,19 @@ const getMemberData = (id) => {
       bio: 'This member profile is currently being updated.',
       joinDate: 'Unknown',
       stats: {
-        builds: 0,
-        pvpWins: 0,
-        hoursPlayed: 0,
-        achievements: 0,
+        Projects: 0,
+        Internships: 0,
+        Courses: 0,
+        CGPA: 0,
       },
     }
   }
+
   // Specific data for Vishal
   if (id === 'vishal') {
     return {
       ...member,
+      role: 'Data Engineer',
       bio: 'Vishal is an aspiring data engineer with a passion for AI and ML. As one of the Lumina Realm, he crafts powerful data pipelines, explores new technologies, and guides the clan through every digital adventure.',
       joinDate: 'November 2023',
       stats: {
@@ -41,7 +43,7 @@ const getMemberData = (id) => {
       },
       linkedin: 'https://www.linkedin.com/in/vishaln24/',
       github: 'https://github.com/Vishal-46',
-      portfolio: 'https://vishal-46.github.io/Vishal-Portfolio/',
+      portfolio: 'https://vishal.scopio.in',
       terminal: 'https://terminal.bytebashblitz.org/profile/Vishal-46',
     }
   }
@@ -50,6 +52,7 @@ const getMemberData = (id) => {
   if (id === 'tony') {
     return {
       ...member,
+      role: 'Unemployment',
       bio: 'Tony is a skilled web developer and cloud computing enthusiast. As one of the guardians of the Lumina Realm, he builds modern web applications, masters React and Supabase, and creates tools that strengthen the clan.',
       joinDate: 'Since 2022',
       stats: {
@@ -60,7 +63,7 @@ const getMemberData = (id) => {
       },
       linkedin: 'https://linkedin.com/in/infancetony',
       github: 'https://github.com/infance-tony',
-      portfolio: 'https://infance-tony.github.io',
+      portfolio: 'https://infance.tech',
       terminal: 'https://terminal.bytebashblitz.org/profilev3/infance-tony',
     }
   }
@@ -69,6 +72,7 @@ const getMemberData = (id) => {
   if (id === 'hamdhan') {
     return {
       ...member,
+      role: 'Data Engineer',
       bio: 'Hamdhan is a passionate data scientist who uncovers hidden insights like discovering rare ores beneath the mountains. He specializes in machine learning and transforms raw data into valuable resources for the Lumina Realm.',
       joinDate: 'November 2023',
       stats: {
@@ -77,9 +81,9 @@ const getMemberData = (id) => {
         Courses: 26,
         CGPA: 8.5 ,
       },
-      linkedin: 'https://linkedin.com/in/hamdhan-hussain',
-      github: 'https://github.com/Hamdhusam',
-      portfolio: 'https://lovable.dev/projects/15278cb1-8afc-4b75-80b0-6271ef8114d2',
+      linkedin: 'https://www.linkedin.com/in/hamdhan-hussain?utm_source=share_via&utm_content=profile&utm_medium=member_ios',
+      github: 'https://github.com/hamdhan-17',
+      portfolio: 'https://github.com/hamdhan-17/hamdhans-data-verse',
       terminal: 'https://terminal.bytebashblitz.org/profilev3/Hamdhusam',
     }
   }
@@ -88,6 +92,7 @@ const getMemberData = (id) => {
   if (id === 'aparna') {
     return {
       ...member,
+      role: 'Full Stack Developer',
       bio: 'Aparna is a talented web developer and UI/UX designer who crafts beautiful digital worlds block by block. She combines creativity and full-stack development to build immersive experiences across the Lumina Realm.',
       joinDate: 'August 2025',
       stats: {
@@ -96,8 +101,8 @@ const getMemberData = (id) => {
         Courses: 10,
         CGPA: 8.75 ,
       },
-      linkedin: 'https://www.linkedin.com/in/aparna-suresh-79276235a',
-      github: 'https://github.com/Aparna-stack-ux782',
+      linkedin: 'https://www.linkedin.com/in/aparna-suresh-79276235a?utm_source=share_via&utm_content=profile&utm_medium=member_android',
+      github: 'https://github.com/Github-Aparna-stack-ux782',
       portfolio: 'https://aparna-mindscape.lovable.app/',
       terminal: 'https://terminal.bytebashblitz.org/profilev3/Aparna-stack-ux782',
     }
@@ -107,6 +112,7 @@ const getMemberData = (id) => {
   if (id === 'nithisha') {
     return {
       ...member,
+      role: 'Data Analyst',
       bio: 'Nithisha is a dedicated data scientist who explores new biomes of data and develops innovative mobile applications. She specializes in image processing and secure systems that help the Lumina Realm thrive.',
       joinDate: 'August 2025',
       stats: {
@@ -115,7 +121,7 @@ const getMemberData = (id) => {
         Courses: 10,
         CGPA: 8.41 ,
       },
-      linkedin: 'https://www.linkedin.com/in/nithisha-p-n-362067332',
+      linkedin: 'https://www.linkedin.com/in/nithisha-p-n-362067332?utm_source=share_via&utm_content=profile&utm_medium=member_android',
       github: 'https://github.com/nithishanagarani',
       portfolio: 'https://lovable.dev/projects/b892721e-ffec-4195-85d4-3878067cd541',
       terminal: 'https://terminal.bytebashblitz.org/profilev3/nithishanagarani',
@@ -126,6 +132,7 @@ const getMemberData = (id) => {
   if (id === 'falin') {
     return {
       ...member,
+      role: 'Software Development Engineer',
       bio: 'Falin is a versatile web developer and UI/UX designer who builds creative digital structures with full-stack technologies. From Python to React, he strengthens the Lumina Realm with every project he creates.',
       joinDate: 'November 2023',
       stats: {
@@ -164,6 +171,7 @@ const getMemberData = (id) => {
   if (id === 'abin') {
     return {
       ...member,
+      role: 'App Developer',
       bio: 'Abin is a web developer who enjoys building efficient digital creations with Python, JavaScript, and React. Every project adds another strong block to the growing Lumina Realm.',
       joinDate: 'November 2023',
       stats: {
@@ -173,8 +181,8 @@ const getMemberData = (id) => {
         CGPA: 7.5 ,
       },
       linkedin: 'https://www.linkedin.com/in/abin-i',
-      github: 'https://github.com/Abin-I',
-      portfolio:'https://instagram.com/abin_i',
+      github: 'https://github.com/abin-i',
+      portfolio: 'https://www.instagram.com/abin_i_05/',
       terminal: 'https://terminal.bytebashblitz.org/profilev3/abin-i',
     }
   }
@@ -183,6 +191,7 @@ const getMemberData = (id) => {
   if (id === 'akshaya') {
     return {
       ...member,
+      role: 'Web Developer',
       bio: 'Akshaya is a passionate web developer and UI/UX designer who brings creativity and precision to every build. Her projects help shape the Lumina Realm into an even better place for adventurers.',
       joinDate: 'August 2025',
       stats: {
@@ -191,9 +200,9 @@ const getMemberData = (id) => {
         Courses: 5,
         CGPA: 8.39 ,
       },
-      linkedin: 'https://www.linkedin.com/in/akshaya-libin-sibcy-l-155a04333?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',
+      linkedin: 'https://www.linkedin.com/in/akshaya-libin-sibcy-155a04333',
       github: 'https://github.com/akshaya-1806',
-      portfolio: 'https://instagram.com/lepidora__',
+      portfolio: 'https://akshayaportfolio-eight.vercel.app/',
       terminal: 'https://terminal.bytebashblitz.org/profilev3/akshaya-1806',
     }
   }
@@ -221,6 +230,7 @@ const getMemberData = (id) => {
   if (id === 'ajisha') {
     return {
       ...member,
+      role: 'AIML',
       bio: 'Ajisha is a web developer and UI/UX designer who enjoys crafting smooth digital experiences. Using Python, JavaScript, and React, she helps build creative projects across the Lumina Realm.',
       joinDate: 'November 2023',
       stats: {
@@ -230,8 +240,8 @@ const getMemberData = (id) => {
         CGPA: 8.83 ,
       },
       linkedin: 'https://www.linkedin.com/in/ajisha-vishnu',
-      github: 'https://github.com/ajisha-vishnu',
-      portfolio: 'https://instagram.com/__.ajisha__',
+      github: 'https://github.com/ajisha-v',
+      portfolio: 'https://www.instagram.com/__.ajisha__?igsh=MW1yMncyMDR1ZGQyOQ==',
       terminal: 'https://terminal.bytebashblitz.org/profilev3/ajisha-v',
     }
   }
@@ -240,6 +250,7 @@ const getMemberData = (id) => {
   if (id === 'jeni') {
     return {
       ...member,
+      role: 'Cloud Engineer',
       bio: 'Jeni is a cloud engineer who designs, builds, and manages scalable cloud infrastructure to drive digital transformation. She specializes in automating deployments, optimizing cloud spend, and ensuring high availability for critical business applications.',
       joinDate: 'April 2026',
       stats: {
@@ -248,18 +259,18 @@ const getMemberData = (id) => {
         Courses: 2,
         CGPA: 8.18 ,
       },
-      linkedin: 'https://www.linkedin.com/in/jenimelbina-s',
+      linkedin: 'https://www.linkedin.com/in/jeni-melbina-s-b23a303ab?utm_source=share_via&utm_content=profile&utm_medium=member_ios',
       github: 'https://github.com/jenimelbina-S',
       portfolio: 'https://sportsdot.in',
       terminal: 'https://terminal.bytebashblitz.org/profilev3/jenimelbina-S',
     }
   }
 
-  
   // Specific data for Aysha
   if (id === 'aysha') {
     return {
       ...member,
+      role: 'Web Developer',
       bio: 'Aysha is a cloud engineer who designs, builds, and manages floating sky bases and massive multi-level structures way up at the build limit. She specializes in automating Elytra launching pads, optimizing render distance lag, and keeping critical community farms floating safely above the void.',
       joinDate: 'April 2026',
       stats: {
@@ -268,9 +279,9 @@ const getMemberData = (id) => {
         Courses: 2,
         CGPA: 8.0 ,
       },
-      linkedin: 'https://terminal.bytebashblitz.org/profilev3/Ayisha%20Syed%20Ali',
+      linkedin: 'https://www.linkedin.com/in/ayisha-barvin-s-7a5958383',
       github: 'https://github.com/ayishahidha16-cmyk',
-      portfolio:'https://instagram.com/_aysha_ayz',
+      portfolio: 'https://www.instagram.com/_aysha_ayz/',
       terminal: 'https://terminal.bytebashblitz.org/profilev3/ayishahidha16-cmyk',
     }
   }
@@ -293,10 +304,12 @@ const getMemberData = (id) => {
       terminal: 'https://terminal.bytebashblitz.org/profilev3/linciya-s',
     }
   }
-    // Specific data for Tharun
+
+  // Specific data for Tharun
   if (id === 'tharun') {
     return {
       ...member,
+      role: 'Cybersecurity',
       bio: 'Tharun is a cyber security engineer who fortifies faction bases, traps Nether portals, and defends servers against griefers and unauthorized raids. He specializes in designing un-minable bedrock shells, anti-Xray precautions, and zero-trust pressure plate verification systems to protect the team’s diamonds',
       joinDate: 'April 2026',
       stats: {
@@ -307,14 +320,16 @@ const getMemberData = (id) => {
       },
       linkedin: 'https://www.linkedin.com/in/tharun-krishna-347b123a0?utm_source=share_via&utm_content=profile&utm_medium=member_android',
       github: 'https://github.com/tharunkrishna107-ship-it',
-      portfolio: 'https://instagram.com/krish._.x__',
+      portfolio: 'https://tharunkrishna.vercel.app/',
       terminal: 'https://terminal.bytebashblitz.org/profilev3/tharunkrishna107-ship-it',
     }
   }
-    // Specific data for Naveen
+
+  // Specific data for Naveen
   if (id === 'naveen') {
     return {
       ...member,
+      role: 'Data Engineer',
       bio: 'Naveen is a data engineer who designs, builds, and maintains massive Redstone sorting systems and hopper pipelines to process chests full of raw materials. He specializes in automating resource collection, building lag-free mob grinders, and ensuring clean, organized storage rooms for the entire server.',
       joinDate: 'April 2026',
       stats: {
@@ -325,11 +340,13 @@ const getMemberData = (id) => {
       },
       linkedin: 'https://www.linkedin.com/in/naveen-m-354887375',
       github: 'https://github.com/nrnnaveen',
-      portfolio: 'https://instagram.com/nrn_naveen_96',
+      portfolio: 'https://naveen-portfolio-ebon.vercel.app/',
       terminal: 'https://terminal.bytebashblitz.org/profilev3/nrnnaveen',
     }
   }
 
+  // Fallback return if ID exists in membersData array but lacks explicit blocks above
+  return member;
 }
 
 const MemberProfile = () => {
@@ -366,9 +383,9 @@ const MemberProfile = () => {
             {/* Left Column - Avatar and Basic Info */}
             <div className="md:col-span-1">
               {/* Avatar - Full display */}
-              <div className={`aspect-[3/4] border-4 ${member.borderColor} mb-6 overflow-hidden bg-black/40 relative`}>
+              <div className={`aspect-[3/4] border-4 ${member.borderColor || 'border-gray-500'} mb-6 overflow-hidden bg-black/40 relative`}>
                 <img 
-                  src={`/Avatar_Bounty/${member.imageName}`}
+                  src={`/Avatar_Bounty/${member.imageName || 'kid.jpg'}`}
                   alt={member.name}
                   className="w-full h-full object-contain"
                   style={{ 
@@ -394,16 +411,18 @@ const MemberProfile = () => {
               <div className="space-y-2">
                 <div className="text-minecraft-green font-bold text-sm mb-2 minecraft-shadow">Contact Info:</div>
                 {socialLinks.map((link, index) => (
-                  <a
-                    key={index}
-                    href={link.url}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex items-center space-x-3 bg-minecraft-dark hover:bg-black/60 p-3 border-2 border-minecraft-green transition-all shadow-md"
-                  >
-                    <span className="text-xl">{link.icon}</span>
-                    <span className="text-white text-sm font-bold">{link.name}</span>
-                  </a>
+                  link.url && (
+                    <a
+                      key={index}
+                      href={link.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center space-x-3 bg-minecraft-dark hover:bg-black/60 p-3 border-2 border-minecraft-green transition-all shadow-md"
+                    >
+                      <span className="text-xl">{link.icon}</span>
+                      <span className="text-white text-sm font-bold">{link.name}</span>
+                    </a>
+                  )
                 ))}
               </div>
             </div>
@@ -413,9 +432,9 @@ const MemberProfile = () => {
               {/* Name and Role */}
               <div className="text-center border-b-4 border-minecraft-green pb-4">
                 <h1 className="text-3xl sm:text-4xl font-bold text-white mb-2 minecraft-shadow">
-                  {member.name.toUpperCase()}
+                  {member.name ? member.name.toUpperCase() : 'UNKNOWN MEMBER'}
                 </h1>
-                <p className={`text-lg font-bold ${member.roleColor} minecraft-shadow`}>
+                <p className={`text-lg font-bold ${member.roleColor || 'text-gray-400'} minecraft-shadow`}>
                   {member.role}
                 </p>
                 {member.type === 'captain' && (
@@ -476,7 +495,7 @@ const MemberProfile = () => {
                       {member.stats?.Courses || 0}
                     </div>
                     <div className="text-minecraft-gray text-xs font-bold">
-                      SKILLS MASTERED
+                      COURSES ON THE BOARD
                     </div>
                   </div>
 
@@ -485,11 +504,12 @@ const MemberProfile = () => {
                       {member.stats?.CGPA || 0}
                     </div>
                     <div className="text-minecraft-gray text-xs font-bold">
-                      EXPERIENCE LEVEL
+                      CURRENT RANK (CGPA)
                     </div>
                   </div>
                 </div>
               </div>
+
             </div>
           </div>
         </div>
