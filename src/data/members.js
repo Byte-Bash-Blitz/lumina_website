@@ -1,4 +1,3 @@
-// src/data/members.js
 
 export const members = [
   {
@@ -10,6 +9,10 @@ export const members = [
     chess: "",
     books: 10,
     duolingo: "Akshaya Libin",
+    class: "Redstone Overthinker",
+    primaryStat: "Logic Loops: 99%",
+    secondaryStat: "Variable Naming: Broken",
+    lore: "Spends 4 hours naming a single variable 'xyz_final_v2_updated'. Rumored to speak fluent compiler error messages when she gets angry."
   },
   {
     id: "aparna",
@@ -20,6 +23,10 @@ export const members = [
     chess: "",
     books: 10,
     duolingo: "Aparna Suresh",
+    class: "Pixel Destroyer",
+    primaryStat: "Div Center Fails: 105",
+    secondaryStat: "CSS Panic Level: Max",
+    lore: "Once spent an entire day trying to center a button, ended up crashing the database instead. Survives entirely on pure hope and stack overflow answers."
   },
   {
     id: "abin",
@@ -30,16 +37,24 @@ export const members = [
     chess: "Abiinn05",
     books: 22,
     duolingo: "ABIN-I",
+    class: "Enderman Blunderer",
+    primaryStat: "Queen Losses: 99",
+    secondaryStat: "Chat Ghosting: 100",
+    lore: "Plays chess like he's donating his pieces to charity. Disappears from the group chat the exact second someone asks, 'Who broke the deployment?'"
   },
-  {
+ {
     id: "vishal",
     name: "Vishal",
     avatar: "/Avatar_Bounty/Vishal.webp",
     github: "vishal-46",
     leetcode: "Vishal-Arcadia",
     chess: "",
-    books: 33,
+    books: 999,
     duolingo: "._VISHAL_.",
+    class: "Cobblestone Coder",
+    primaryStat: "Spaghetti Code: 98",
+    secondaryStat: "Monitor Stand: Maxed",
+    lore: "His comments are so cryptic that even ChatGPT asked him for a translation, and his commit histories look like a random cat walked across his mechanical keyboard."
   },
   {
     id: "ajisha",
@@ -50,6 +65,10 @@ export const members = [
     chess: "ajisha.v",
     books: 25,
     duolingo: "ajisha.v",
+    class: "Syntax Bully",
+    primaryStat: "Key Smash Force: 99",
+    secondaryStat: "Patience Meter: 0%",
+    lore: "Solves LeetCode Hard modules just to flex on mere mortals. Will aggressively judge your formatting choices until you look for a place to hide."
   },
   {
     id: "falin",
@@ -60,6 +79,10 @@ export const members = [
     chess: "furooz_ul_haq",
     books: 23,
     duolingo: "Falin Sando",
+    class: "Java Void Walker",
+    primaryStat: "RAM Eaten: 99.9%",
+    secondaryStat: "NullPointer Buff: Max",
+    lore: "Writes Java infinite loops that melt server memory. Can stare into a lava pit with a completely blank face."
   },
   {
     id: "hamdhan",
@@ -70,6 +93,10 @@ export const members = [
     chess: "",
     books: 22,
     duolingo: "",
+    class: "Glitch Collector",
+    primaryStat: "Bug Multiplier: 94",
+    secondaryStat: "Owl Ghosting: 100",
+    lore: "Bugs actively hunt him down and build settlements in his repository. Completely ghosted the Duolingo owl to save whatever is left of his sanity."
   },
   {
     id: "jenish",
@@ -80,6 +107,10 @@ export const members = [
     chess: "",
     books: 24,
     duolingo: "",
+    class: "Semicolon Thief",
+    primaryStat: "Macro Spam: 93",
+    secondaryStat: "Ctrl+Z Speed: 99",
+    lore: "Has highly advanced custom keyboard macros for absolutely everything, except writing logic that actually runs without crashing."
   },
   {
     id: "nithisha",
@@ -90,6 +121,10 @@ export const members = [
     chess: "",
     books: 26,
     duolingo: "NITHI_21",
+    class: "Owl Pleaser",
+    primaryStat: "Duolingo Slavery: 99",
+    secondaryStat: "Memory Buff: Broken",
+    lore: "Maintains her language streak out of sheer cosmic terror of the green owl. Stores entire tech manuals in her brain but loses her house keys."
   },
   {
     id: "tony",
@@ -100,8 +135,12 @@ export const members = [
     chess: "",
     books: 32,
     duolingo: "infancetony",
+    class: "Conflict Creator",
+    primaryStat: "Git Force Push: 98",
+    secondaryStat: "Team Panic: 96",
+    lore: "Will casually force-push to the main branch at midnight and sleep peacefully while the entire team handles 400 devastating merge conflicts."
   },
-  {
+ {
     id: "naveen",
     name: "Naveen",
     avatar: "/Avatar_Bounty/naveen.webp",
@@ -111,6 +150,10 @@ export const members = [
     books: 1,
     duolingo: "NAVEEN-NRN",
     duolingoStreak: 139,
+    class: "Termux Sorcerer",
+    primaryStat: "Auto-Correct Pain: 99",
+    secondaryStat: "Typo Hunting: Level 100",
+    lore: "Tries to compile a database on his phone using Termux but spends hours debugging because of phone auto-correct mistakes, spending half his time fighting a tiny mobile backspace key."
   },
   {
     id: "tharun",
@@ -121,6 +164,10 @@ export const members = [
     chess: "Tharunkrishna_7",
     books: 1,
     duolingo: "",
+    class: "YOLO Deployer",
+    primaryStat: "Prod Crashing: 95",
+    secondaryStat: "Test Bypassing: 100",
+    lore: "His absolute motto is 'Ship it now, debug it later.' Believes that local environment testing is just a massive waste of precious youth."
   },
   {
     id: "linciya",
@@ -131,6 +178,10 @@ export const members = [
     chess: "",
     books: 1,
     duolingo: "linciyaS",
+    class: "Chaos Manager",
+    primaryStat: "Typo Hunting: 90",
+    secondaryStat: "Invisibility: 85",
+    lore: "Spends hours fixing messy global variable blocks. Has an elite ability to vanish completely from the text logs when the actual workload doubles."
   },
   {
     id: "arshiya",
@@ -141,6 +192,10 @@ export const members = [
     chess: "",
     books: 1,
     duolingo: "",
+    class: "Vampire Developer",
+    primaryStat: "Dark Mode Power: 100",
+    secondaryStat: "Sun Damage: -50HP",
+    lore: "Takes massive magical damage if he accidentally views a light mode IDE layout. Codes exclusively in pure pitch-black darkness."
   },
   {
     id: "jeni",
@@ -151,6 +206,10 @@ export const members = [
     chess: "",
     books: 1,
     duolingo: "Jenimelbin1",
+    class: "Error Ignorer",
+    primaryStat: "Warning Ignore: 94",
+    secondaryStat: "Zen Buffer: 90",
+    lore: "Stares directly at 45 critical runtime console warnings and calmly tells the team, 'Well, it builds on my local machine, so it's accurate.'"
   },
   {
     id: "aysha",
@@ -161,5 +220,10 @@ export const members = [
     chess: "",
     books: 1,
     duolingo: "AyishaSyed11",
-  },
+    class: "Color Saboteur",
+    primaryStat: "UI Flashbang: 92",
+    secondaryStat: "Multilingual Mix: 88",
+    lore: "Chooses the most blinding neon layout combinations just to verify if the remaining developers are actually awake. Comments code in hidden text."
+  }
 ];
+
