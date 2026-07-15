@@ -63,6 +63,23 @@ async function fetchChessRapidRating(username) {
   return rating;
 }
 
+// Duolingo: Fetch current streak (UNOFFICIAL API - may not work)
+async function fetchDuolingoStreak(username) {
+  const res = await fetch(
+    `https://www.duolingo.com/2017-06-30/users?username=${encodeURIComponent(username)}`
+  );
+
+  if (!res.ok) throw new Error("Duolingo API error");
+
+  const data = await res.json();
+
+  if (!data.users || data.users.length === 0) {
+    throw new Error("User not found");
+  }
+
+  return data.users[0].streak ?? 0;
+}
+
 const TAB_CONFIG = {
   github: {
     label: "STREAK",
@@ -86,10 +103,10 @@ const TAB_CONFIG = {
     getValue: (member) => Promise.resolve(member.books ?? 0),
   },
   duolingo: {
-    label: "DAY STREAK",
-    usernameKey: "duolingo",
-    getValue: (member) => Promise.resolve(member.duolingoStreak ?? 0),
-  },
+  label: "DAY STREAK",
+  usernameKey: "duolingo",
+  getValue: (member) => fetchDuolingoStreak(member.duolingo),
+},
 };
 
 export default function Leaderboard({ activeTab, members }) {

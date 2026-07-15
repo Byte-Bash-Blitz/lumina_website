@@ -126,8 +126,8 @@ useEffect(() => {
 
         {/* Primary CTAs */}
         <Reveal delay={300} className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-14">
-          <PixelButton to="/hall-of-fame" variant="primary">
-            🏆 Hall of Fame
+          <PixelButton to="/Lore-Wall" variant="primary">
+            🏆 Lore Wall
           </PixelButton>
           <PixelButton to="/members" variant="secondary">
             🤝 Meet The Clan
