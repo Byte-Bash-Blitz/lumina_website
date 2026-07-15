@@ -12,7 +12,7 @@ export const members = [
     class: "Redstone Overthinker",
     primaryStat: "Logic Loops: 99%",
     secondaryStat: "Variable Naming: Broken",
-    lore: "Spends 4 hours naming a single variable 'xyz_final_v2_updated'. Rumored to speak fluent compiler error messages when she gets angry."
+    lore: "Spends 4 hours naming a single variable 'xyz_final_updated'. Rumored to speak fluent compiler error messages when she gets angry."
   },
   {
     id: "aparna",
