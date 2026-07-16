@@ -14,7 +14,7 @@ const Navbar = ({ scrolled }) => {
   // External Link
   {
     name: '🎮 QUIZ',
-    href: 'https://lumina.staticdomains.app/',
+    href: 'https://lumina-den.github.io/Lumina-Quiz/',
     external: true,
   },
 ]
