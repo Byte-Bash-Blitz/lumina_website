@@ -22,7 +22,7 @@ const projects = [
     stack: 'HTML · CSS · JavaScript',
     description:
       'Lumina Quiz is an interactive programming quiz platform built for practicing multiple coding languages. It allows users to test their technical skills, tackle language-specific question sets, and sharpen their programming fundamentals through a clean and responsive web environment.',
-    link: 'https://lumina.staticdomains.app/',
+    link: 'https://lumina-den.github.io/Lumina-Quiz/',
   },
     {
     name: 'Image Classifier',
