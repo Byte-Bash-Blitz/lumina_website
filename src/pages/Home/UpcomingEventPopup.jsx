@@ -87,7 +87,7 @@ const UpcomingEventPopup = () => {
           <div className="mt-4 space-y-2 text-[8px] text-gray-300">
 
             <div className="flex items-center gap-2">
-              📅 <span>July 20, 2026</span>
+              📅 <span>Aug 22, 2026</span>
             </div>
 
           </div>
