@@ -3,11 +3,20 @@ import { useNavigate } from "react-router-dom";
 
 const STORAGE_KEY = "luminaQuestPopupHiddenUntil";
 
+// Set to true when the event has ended.
+// Change to false to enable the popup again.
+const EVENT_ENDED = true;
+
 const UpcomingEventPopup = () => {
   const [show, setShow] = useState(false);
   const navigate = useNavigate();
 
   useEffect(() => {
+    // Do not show the popup if the event has ended.
+    if (EVENT_ENDED) {
+      return;
+    }
+
     const hiddenUntil = Number(localStorage.getItem(STORAGE_KEY));
 
     if (hiddenUntil && Date.now() < hiddenUntil) {
@@ -73,7 +82,6 @@ const UpcomingEventPopup = () => {
 
         {/* Body */}
         <div className="p-3">
-
           <div className="flex items-center gap-2">
             <span className="text-base">💎</span>
 
@@ -85,16 +93,13 @@ const UpcomingEventPopup = () => {
           </div>
 
           <div className="mt-4 space-y-2 text-[8px] text-gray-300">
-
             <div className="flex items-center gap-2">
               📅 <span>Aug 22, 2026</span>
             </div>
-
           </div>
 
           {/* Progress */}
           <div className="mt-4">
-
             <div className="h-1.5 bg-gray-800 border border-black">
               <div className="h-full w-full bg-emerald-400 animate-pulse"></div>
             </div>
@@ -102,7 +107,6 @@ const UpcomingEventPopup = () => {
             <p className="mt-2 text-center text-[8px] text-emerald-300">
               REGISTRATION OPEN
             </p>
-
           </div>
 
           {/* Button */}
@@ -129,14 +133,14 @@ const UpcomingEventPopup = () => {
 
       <style>
         {`
-          @keyframes popup{
-            from{
-              opacity:0;
-              transform:translateY(20px) scale(.95);
+          @keyframes popup {
+            from {
+              opacity: 0;
+              transform: translateY(20px) scale(.95);
             }
-            to{
-              opacity:1;
-              transform:translateY(0) scale(1);
+            to {
+              opacity: 1;
+              transform: translateY(0) scale(1);
             }
           }
         `}
