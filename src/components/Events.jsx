@@ -4,15 +4,12 @@ import { Link } from 'react-router-dom'
 const EVENTS = [
   {
     title: 'Lumina Radiance Rally',
-    date: ' Starts On August 22 , 2026 · 7:00 PM IST',
+    date: ' Aug 22 , 2026 · 6:00 PM IST',
     description:
       '**Lumina Radiance Rally** is a Event, where Bashers can showcase their presentation skills, knowledge, and confidence through engaging topic presentations. Participants will be evaluated by a panel of judges, and outstanding performers will be recognized with awards for their excellence. ',
-    cta: 'Register Now',
-    link: '/events/lumina-radiance-rally/register',
     category: 'Inter-Clan',
-    status: 'Upcoming',
+    status: 'Wrapped Up',
     image: '/rally.webp',
-    featured: true,
   },
   {
     title: 'Rookie Weekly Bash',
