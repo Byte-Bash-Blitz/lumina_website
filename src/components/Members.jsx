@@ -3,11 +3,40 @@ import { Link } from 'react-router-dom'
 
 export const membersData = [
   // Captains
+  
+  
+  {
+    id: 'tharun',
+    name: 'Tharun Krishna',
+    imageName: 'tharun.webp',
+    type: 'captain',
+    bounty: '800,000,000',
+    bgColor: 'bg-gradient-to-br from-yellow-900/80 to-amber-900/80',
+    cardBg: 'bg-gradient-to-br from-yellow-800/70 to-orange-800/70',
+    borderColor: 'border-yellow-500',
+    roleColor: 'text-yellow-300',
+    textColor: 'text-amber-200',
+  },
+  {
+    id: 'linciya',
+    name: 'Linciya',
+    imageName: 'linciya.webp',
+    type: 'captain',
+    bounty: '850,000,000',
+    bgColor: 'bg-gradient-to-br from-orange-900/90 to-amber-900/90',
+    cardBg: 'bg-gradient-to-br from-orange-800/80 to-amber-800/80',
+    borderColor: 'border-orange-600',
+    roleColor: 'text-orange-300',
+    textColor: 'text-orange-200',
+  },
+  
+  // Regular members
+
   {
     id: 'akshaya',
     name: 'Akshaya',
     imageName: 'Akshaya.webp',
-    type: 'captain',
+    type: 'ex-cb',
     bounty: '999,999,999',
     bgColor: 'bg-gradient-to-br from-yellow-900/80 to-amber-900/80',
     cardBg: 'bg-gradient-to-br from-yellow-800/70 to-orange-800/70',
@@ -19,7 +48,7 @@ export const membersData = [
     id: 'aparna',
     name: 'Aparna',
     imageName: 'Aparna.webp',
-    type: 'captain',
+    type: 'ex-cb',
     bounty: '999,999,000',
     bgColor: 'bg-gradient-to-br from-orange-900/90 to-amber-900/90',
     cardBg: 'bg-gradient-to-br from-orange-800/80 to-amber-800/80',
@@ -28,7 +57,7 @@ export const membersData = [
     textColor: 'text-orange-200',
   },
   
-  // Regular members
+  
   {
     id: 'abin',
     name: 'Abin',
@@ -45,7 +74,7 @@ export const membersData = [
     id: 'vishal',
     name: 'Vishal',
     imageName: 'Vishal.webp',
-    type: 'member',
+    type: 'organizer',
     bounty: '1,000,000,000',
     bgColor: 'bg-gradient-to-br from-amber-900/90 to-yellow-900/90',
     cardBg: 'bg-gradient-to-br from-amber-800/80 to-yellow-800/80',
@@ -69,7 +98,7 @@ export const membersData = [
     id: 'falin',
     name: 'Falin',
     imageName: 'Falin.webp',
-    type: 'member',
+    type: 'ex-lo',
     bounty: '550,000,000',
     bgColor: 'bg-gradient-to-br from-yellow-900/80 to-amber-900/80',
     cardBg: 'bg-gradient-to-br from-yellow-800/70 to-orange-800/70',
@@ -81,7 +110,7 @@ export const membersData = [
     id: 'hamdhan',
     name: 'Hamdhan',
     imageName: 'Hamdhan.webp',
-    type: 'member',
+    type: 'organizer',
     bounty: '810,000,000',
     bgColor: 'bg-gradient-to-br from-orange-900/90 to-amber-900/90',
     cardBg: 'bg-gradient-to-br from-orange-800/80 to-amber-800/80',
@@ -138,30 +167,7 @@ export const membersData = [
     roleColor: 'text-amber-300',
     textColor: 'text-amber-200',
   },
-  {
-    id: 'tharun',
-    name: 'Tharun Krishna',
-    imageName: 'tharun.webp',
-    type: 'member',
-    bounty: '800,000,000',
-    bgColor: 'bg-gradient-to-br from-yellow-900/80 to-amber-900/80',
-    cardBg: 'bg-gradient-to-br from-yellow-800/70 to-orange-800/70',
-    borderColor: 'border-yellow-500',
-    roleColor: 'text-yellow-300',
-    textColor: 'text-amber-200',
-  },
-  {
-    id: 'linciya',
-    name: 'Linciya',
-    imageName: 'linciya.webp',
-    type: 'member',
-    bounty: '850,000,000',
-    bgColor: 'bg-gradient-to-br from-orange-900/90 to-amber-900/90',
-    cardBg: 'bg-gradient-to-br from-orange-800/80 to-amber-800/80',
-    borderColor: 'border-orange-600',
-    roleColor: 'text-orange-300',
-    textColor: 'text-orange-200',
-  },
+  
   {
     id: 'arshiya',
     name: 'Mohammed Arshiya',
@@ -201,39 +207,87 @@ export const membersData = [
 ]
 
 const Members = () => {
-  // Avatar component using local images from Avatar_Bounty folder
-  const MemberAvatar = ({ imageName, name, isHoverable = false, aspectRatio = "square" }) => {
-    const avatarUrl = `/Avatar_Bounty/${imageName}`
-    
+  // Avatar component
+  const MemberAvatar = ({
+    imageName,
+    name,
+    isHoverable = false,
+    aspectRatio = "square",
+  }) => {
+    const avatarUrl = `/Avatar_Bounty/${imageName}`;
+
     return (
-      <div className={`w-full h-full flex items-center justify-center overflow-hidden ${isHoverable ? 'transition-all duration-300 hover:scale-105' : ''}`}>
-        <img 
+      <div
+        className={`w-full h-full flex items-center justify-center overflow-hidden ${
+          isHoverable
+            ? "transition-all duration-300 group-hover:scale-105"
+            : ""
+        }`}
+      >
+        <img
           src={avatarUrl}
           alt={`${name}'s Avatar`}
-          className={`w-full h-full ${aspectRatio === 'square' ? 'object-contain' : 'object-cover'}`}
-          style={{ 
-            imageRendering: 'crisp-edges',
-            WebkitImageRendering: 'crisp-edges',
-            msImageRendering: 'crisp-edges'
+          className={`w-full h-full ${
+            aspectRatio === "square" ? "object-contain" : "object-cover"
+          }`}
+          style={{
+            imageRendering: "crisp-edges",
+            WebkitImageRendering: "crisp-edges",
+            msImageRendering: "crisp-edges",
           }}
           onError={(e) => {
-            e.target.src = '/Avatar_Bounty/kid.jpg'
+            e.currentTarget.src = "/Avatar_Bounty/kid.jpg";
           }}
         />
       </div>
-    )
-  }
+    );
+  };
 
-  // Captains - Top tier leadership (Vishal and Ajisha)
-  const captains = membersData.filter(member => member.type === 'captain')
+  // Captains only
+  const captains = membersData.filter(
+    (member) => member.type === "captain"
+  );
 
-  // Regular members - Skilled warriors
-  const clanMembers = membersData.filter(member => member.type === 'member')
+  // EVERYONE except captains goes into one members section
+  const clanMembers = membersData.filter(
+    (member) => member.type !== "captain"
+  );
+
+  // Badge configuration based on member.type
+  const getBadge = (type) => {
+    switch (type) {
+      case "organizer":
+        return {
+          text: "ORGANIZER",
+          className:
+            "bg-green-700 text-amber-200 border-green-900",
+        };
+
+      case "ex-lo":
+        return {
+          text: "EX-LO",
+          className:
+            "bg-yellow-700 text-yellow-100 border-yellow-900",
+        };
+
+      case "ex-cb":
+        return {
+          text: "EX-CB",
+          className:
+            "bg-red-700 text-red-100 border-red-900",
+        };
+
+      default:
+        return null;
+    }
+  };
 
   return (
     <section className="min-h-screen py-20 bg-minecraft-darker relative overflow-hidden">
+
       {/* Dark wooden board texture */}
       <div className="absolute inset-0 bg-gradient-to-br from-stone-800/20 to-stone-900/30 mix-blend-multiply"></div>
+
       <div
         className="absolute inset-0 opacity-5"
         style={{
@@ -243,7 +297,9 @@ const Members = () => {
       ></div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        {/* Header */}
+
+        {/* ================= HEADER ================= */}
+
         <div className="text-center mb-12">
           <h1 className="text-3xl sm:text-4xl font-bold text-white mb-2 minecraft-shadow">
             LUMINA REALM
@@ -259,94 +315,227 @@ const Members = () => {
           </p>
         </div>
 
-        {/* Clan Leaders Section */}
-        <div className="mb-16">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-            {captains.map((captain) => (
-              <div key={captain.id} className="text-center">
-                <Link
-                  to={`/member/${captain.id}`}
-                  className="block relative group"
-                >
-                  <div
-                    className={`aspect-[3/4] ${captain.bgColor} overflow-hidden shadow-2xl border-6 ${captain.borderColor} hover:shadow-3xl transition-all duration-300 transform hover:-translate-y-2 bounty-paper-dark relative`}
-                  >
-                    {/* Avatar - Full area */}
-                    <div className="absolute inset-2">
-                      <MemberAvatar
-                        imageName={captain.imageName}
-                        name={captain.name}
-                        isHoverable={true}
-                        aspectRatio="portrait"
-                      />
-                    </div>
 
-                    {/* Clan Leader Badge */}
-                    <div className="absolute top-3 right-3 z-10">
-                      <div className="bg-green-700 text-amber-200 px-3 py-2 shadow-lg border-2 border-green-900 transform rotate-12">
-                        <span className="text-xs font-bold">
-                          👑 CLAN LEADER 👑
-                        </span>
+        {/* ================= CLAN LEADERS ================= */}
+
+        {captains.length > 0 && (
+          <div className="mb-16">
+
+            <div className="text-center mb-8">
+              <h2 className="text-2xl sm:text-3xl font-bold text-white minecraft-shadow">
+                 CLAN LEADERS 
+              </h2>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+
+              {captains.map((captain) => (
+                <div
+                  key={captain.id}
+                  className="text-center"
+                >
+
+                  <Link
+                    to={`/member/${captain.id}`}
+                    className="block relative group"
+                  >
+
+                    {/* Captain Card */}
+                    <div
+                      className={`
+                        aspect-[3/4]
+                        ${captain.bgColor}
+                        overflow-hidden
+                        shadow-2xl
+                        border-6
+                        ${captain.borderColor}
+                        hover:shadow-3xl
+                        transition-all
+                        duration-300
+                        transform
+                        hover:-translate-y-2
+                        bounty-paper-dark
+                        relative
+                      `}
+                    >
+
+                      {/* Avatar */}
+                      <div className="absolute inset-2">
+                        <MemberAvatar
+                          imageName={captain.imageName}
+                          name={captain.name}
+                          isHoverable={true}
+                          aspectRatio="portrait"
+                        />
                       </div>
+
+
+                      {/* Captain Badge */}
+                      <div className="absolute top-3 right-3 z-20">
+                        <div
+                          className="
+                            bg-green-700
+                            text-amber-200
+                            px-3
+                            py-2
+                            shadow-lg
+                            border-2
+                            border-green-900
+                            transform
+                            rotate-6
+                          "
+                        >
+                          <span className="text-xs font-bold tracking-wide">
+                            CLAN LEADER
+                          </span>
+                        </div>
+                      </div>
+
                     </div>
+
+                  </Link>
+
+
+                  {/* Captain Name */}
+                  <div className="mt-4">
+                    <h3
+                      className={`
+                        ${captain.textColor}
+                        text-xl
+                        font-bold
+                        bounty-subtitle
+                        minecraft-shadow
+                      `}
+                    >
+                      {captain.name}
+                    </h3>
                   </div>
-                </Link>
 
-                <div className="mt-4">
-                  <h3
-                    className={`${captain.textColor} text-xl font-bold bounty-subtitle minecraft-shadow`}
-                  >
-                    {captain.name}
-                  </h3>
                 </div>
-              </div>
-            ))}
-          </div>
-        </div>
+              ))}
 
-        {/* Clan Members Section */}
-        <div>
-          <div className="text-center mb-8">
-            <h2 className="text-2xl sm:text-3xl font-bold text-white minecraft-shadow">
-              ⛏️ CLAN MEMBERS ⛏️
-            </h2>
+            </div>
           </div>
+        )}
 
-          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 max-w-5xl mx-auto">
-            {clanMembers.map((member) => (
-              <div key={member.id} className="text-center">
-                <Link
-                  to={`/member/${member.id}`}
-                  className="block group"
-                >
+
+        {/* ================= ALL CLAN MEMBERS ================= */}
+
+        {clanMembers.length > 0 && (
+          <div>
+
+            {/* Section Title */}
+            <div className="text-center mb-8">
+              <h2 className="text-2xl sm:text-3xl font-bold text-white minecraft-shadow">
+                 CLAN MEMBERS 
+              </h2>
+            </div>
+
+
+            {/* One single grid for EVERYONE */}
+            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 max-w-5xl mx-auto">
+
+              {clanMembers.map((member) => {
+
+                const badge = getBadge(member.type);
+
+                return (
                   <div
-                    className={`aspect-[4/5] ${member.bgColor} overflow-hidden shadow-xl border-4 ${member.borderColor} hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1 bounty-paper-dark relative`}
+                    key={member.id}
+                    className="text-center"
                   >
-                    {/* Avatar - Full area */}
-                    <div className="absolute inset-1">
-                      <MemberAvatar
-                        imageName={member.imageName}
-                        name={member.name}
-                        isHoverable={true}
-                        aspectRatio="portrait"
-                      />
-                    </div>
-                  </div>
-                </Link>
 
-                <div className="mt-3">
-                  <h3
-                    className={`${member.textColor} text-sm font-bold bounty-subtitle minecraft-shadow`}
-                  >
-                    {member.name}
-                  </h3>
-                </div>
-              </div>
-            ))}
+                    <Link
+                      to={`/member/${member.id}`}
+                      className="block group"
+                    >
+
+                      {/* Member Card */}
+                      <div
+                        className={`
+                          aspect-[4/5]
+                          ${member.bgColor}
+                          overflow-hidden
+                          shadow-xl
+                          border-4
+                          ${member.borderColor}
+                          hover:shadow-2xl
+                          transition-all
+                          duration-300
+                          transform
+                          hover:-translate-y-1
+                          bounty-paper-dark
+                          relative
+                        `}
+                      >
+
+                        {/* Avatar */}
+                        <div className="absolute inset-1">
+                          <MemberAvatar
+                            imageName={member.imageName}
+                            name={member.name}
+                            isHoverable={true}
+                            aspectRatio="portrait"
+                          />
+                        </div>
+
+
+                        {/* ================= BADGE ================= */}
+
+                        {badge && (
+                          <div className="absolute top-2 right-2 z-20">
+
+                            <div
+                              className={`
+                                ${badge.className}
+                                px-2.5
+                                py-1.5
+                                shadow-lg
+                                border-2
+                                transform
+                                rotate-6
+                              `}
+                            >
+                              <span className="text-[9px] sm:text-[10px] font-bold tracking-wide whitespace-nowrap">
+                                {badge.text}
+                              </span>
+                            </div>
+
+                          </div>
+                        )}
+
+                      </div>
+
+                    </Link>
+
+
+                    {/* Member Name */}
+                    <div className="mt-3">
+                      <h3
+                        className={`
+                          ${member.textColor}
+                          text-sm
+                          font-bold
+                          bounty-subtitle
+                          minecraft-shadow
+                        `}
+                      >
+                        {member.name}
+                      </h3>
+                    </div>
+
+                  </div>
+                );
+              })}
+
+            </div>
+
           </div>
-        </div>
+        )}
+
       </div>
     </section>
   );
-}
-export default Members
+};
+
+export default Members;
