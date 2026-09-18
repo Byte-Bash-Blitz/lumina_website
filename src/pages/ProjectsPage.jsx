@@ -230,9 +230,7 @@ const ProjectsPage = () => {
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <header className="text-center mb-14">
-          <p className="inline-flex items-center px-4 py-2 mb-5 text-[10px] sm:text-[11px] uppercase tracking-[0.35em] text-[#7bffce] border border-[#7bffce]/30 bg-[#7bffce]/10 rounded-full">
-            Lumina Project Vault
-          </p>
+          
           <h1 className="text-3xl sm:text-5xl font-bold text-white mb-4 minecraft-shadow tracking-[0.18em] uppercase">
             Projects
           </h1>

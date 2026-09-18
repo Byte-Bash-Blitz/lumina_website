@@ -305,9 +305,7 @@ const Members = () => {
             LUMINA REALM
           </h1>
 
-          <div className="text-minecraft-green text-sm font-bold">
-            GUILD MASTERS
-          </div>
+         
 
           <p className="text-minecraft-gray text-base max-w-2xl mx-auto leading-relaxed mt-6 font-semibold">
             Meet the legendary adventurers who build, explore, conquer, and

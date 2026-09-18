@@ -7,8 +7,8 @@ const EVENTS = [
     date: ' Aug 22 , 2026 · 6:00 PM IST',
     description:
       '**Lumina Radiance Rally** is a Event, where Bashers can showcase their presentation skills, knowledge, and confidence through engaging topic presentations. Participants will be evaluated by a panel of judges, and outstanding performers will be recognized with awards for their excellence. ',
-    category: 'Inter-Clan',
-    status: 'Wrapped Up',
+    category: 'Community',
+    status: 'Wrapped',
     image: '/rally.webp',
   },
   {
@@ -17,7 +17,7 @@ const EVENTS = [
     description:
       'Where rookies meet Bashers! Get introduced to all clans, explore their unique cultures, and choose your squad. Your clan journey starts here.',
     category: 'Community',
-    status: 'Wrapped Up',
+    status: 'Wrapped',
     image: '/eve_10.jpg',
   },
   {
@@ -37,7 +37,7 @@ const EVENTS = [
       'Clan DJs, meme reels, mini-games, and shout-outs. Drop in, boost morale, and recruit new allies.',
     cta: 'Join the Bash',
     category: 'Community',
-    status: 'Live',
+    status: 'Wrapped',
     image: '/eve_2.jpg',
   },
   {
@@ -83,7 +83,7 @@ const EVENTS = [
     description: 'Content ops intensive: streaming, editing, narrative building led by allied creators.',
     cta: 'Secure a Seat',
     category: 'Outside',
-    status: 'Upcoming',
+    status: 'Wrapped',
     image: '/eve_7.jpg',
   },
   {
@@ -92,7 +92,7 @@ const EVENTS = [
     description: 'Cross-community quests, collab raids, and accelerator calls opened by partner orgs.',
     cta: 'View Invites',
     category: 'Outside',
-    status: 'Live',
+    status: 'Wrapped',
     image: '/eve_8.jpg',
   },
   {
@@ -148,11 +148,9 @@ const Events = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <header className="text-center mb-14">
           <h1 className="text-3xl sm:text-4xl font-bold text-white mb-4 tracking-[0.18em] uppercase minecraft-shadow">
-            Clan Events Dispatch
+            Clan Conducted Events 
           </h1>
-          <p className="max-w-2xl mx-auto text-xs sm:text-sm text-minecraft-gray uppercase tracking-[0.25em]">
-            One scroll. All signal. Community broadcasts, inter-clan ops, and outside arena drops in one slate.
-          </p>
+          
         </header>
 
         {featured && (
